@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: center">Bảng cửu chương</h1>
+<script>
+    let bang, a, b;
+    bang = "<table border='1' width='100%' cellspacing='1' cellpadding='0' style='text-align: center'>";
+    for (a = 2; a <= 9; a++) {
+        bang = bang + "<tr>";
+        for (b = 2; b<=9; b++) {
+            bang = bang + "<td>" + b + "*" + a + "=" + a * b +"</td>";
+        }
+         bang = bang + "</tr>";
+    }
+    bang = bang + "</table>";
+    document.write(bang);
+</script>
+</body>
+</html>
